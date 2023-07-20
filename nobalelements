@@ -1,0 +1,11 @@
+A=list(map(int,input().split()))
+def nobleInteger(A):
+    A.sort()  
+    n = len(A)
+    count=0
+    for i in range(n):
+        if A[i] ==  i - 1:
+            count=count+1
+            return count
+    return -1
+print(nobleInteger(A))
